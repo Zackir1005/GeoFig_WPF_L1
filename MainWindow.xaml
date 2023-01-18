@@ -1,0 +1,49 @@
+﻿<Window x:Class="GeoFig_WPF_L1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoFig_WPF_L1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="myGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="179*"/>
+            <ColumnDefinition Width="221*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Круг" Click="ButtonCircle_Click" Margin="-111,-200,250,0" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" FontWeight="Bold" FontStyle="Italic" />
+        <Button Content="Прямоугольник" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ButtonRectangle_Click" Grid.ColumnSpan="2" Margin="-1,0,1,0" FontStyle="Italic" FontWeight="Bold"/>
+        <Button Content="Треугольник" HorizontalAlignment="Center" Margin="-165,200,195,0" VerticalAlignment="Center" Click="ButtonTriangle_Click" Grid.Column="1" FontStyle="Italic" FontWeight="Bold"/>
+        <ComboBox x:Name="cmbColors1" SelectionChanged="cmbColors1_SelectChang" HorizontalAlignment="Center" Margin="200,-200,0,0" VerticalAlignment="Center" Width="120" Text="Выбор цвета" Grid.Column="1">
+            <TextBlock><Run Text="Red"/></TextBlock>
+            <TextBlock><Run Text="Orange"/></TextBlock>
+            <TextBlock><Run Text="Yellow"/></TextBlock>
+            <TextBlock><Run Text="Green"/></TextBlock>
+            <TextBlock><Run Text="Blue"/></TextBlock>
+            <TextBlock><Run Text="Pink"/></TextBlock>
+            <TextBlock><Run Text="Violet"/></TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="cmbColors2" SelectionChanged="cmbColors2_SelectChang" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" Text="Выбор цвета" Grid.Column="1" Margin="200,0,0,0">
+            <TextBlock><Run Text="Red"/></TextBlock>
+            <TextBlock><Run Text="Orange"/></TextBlock>
+            <TextBlock><Run Text="Yellow"/></TextBlock>
+            <TextBlock><Run Text="Green"/></TextBlock>
+            <TextBlock><Run Text="Blue"/></TextBlock>
+            <TextBlock><Run Text="Pink"/></TextBlock>
+            <TextBlock><Run Text="Violet"/></TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="cmbColors3" SelectionChanged="cmbColors3_SelectChang" HorizontalAlignment="Center" Margin="200,200,0,0" VerticalAlignment="Center" Width="120" Text="Выбор цвета" Grid.Column="1">
+            <TextBlock><Run Text="Red"/></TextBlock>
+            <TextBlock><Run Text="Orange"/></TextBlock>
+            <TextBlock><Run Text="Yellow"/></TextBlock>
+            <TextBlock><Run Text="Green"/></TextBlock>
+            <TextBlock><Run Text="Blue"/></TextBlock>
+            <TextBlock><Run Text="Pink"/></TextBlock>
+            <TextBlock><Run Text="Violet"/></TextBlock>
+        </ComboBox>
+        <Label Content="Нажмите на кнопку ещё раз,чтобы поменять цвет" HorizontalAlignment="Center" Margin="0,-300,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.53,-1.477" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Label Content="Нажмите на кнопку ещё раз,чтобы поменять цвет" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.53,-1.477" Grid.ColumnSpan="2" FontWeight="Bold"/>
+        <Label Content="Нажмите на кнопку ещё раз,чтобы поменять цвет" HorizontalAlignment="Center" Margin="0,-100,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.53,-1.477" Grid.ColumnSpan="2" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
